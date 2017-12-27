@@ -1,7 +1,5 @@
 # Create music player by react
 
-==
-
 #### 1. 安装依赖
 
 ```JSON
@@ -33,7 +31,7 @@
 #### 2. 配置项目案例开发环境
 
 ```
-1. 配置微型node服务器
+1. 配置微型node服务器 webpack-dev-server
 2. 实现热加载
 3. 更新 webpack.config.js 植入相关插件信息以及入口和出口的相关修改 
 4. 更改app目录下相关文件引用
