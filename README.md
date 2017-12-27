@@ -1,6 +1,6 @@
 # Create music player by react
 
-* 1. 安装依赖
+> 1. 安装依赖
 
 ```JSON
 "dependencies": {
@@ -28,7 +28,7 @@
 }
 ```
 
-* 2. 配置项目案例开发环境
+> 2. 配置项目案例开发环境
 
 ```
 1. 配置微型node服务器 webpack-dev-server
