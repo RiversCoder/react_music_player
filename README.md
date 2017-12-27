@@ -1,6 +1,7 @@
 ## create music player by react
 
 #### 安装依赖
+
 ```JSON
 "dependencies": {
 	"autoprefixer": "^7.2.3",
@@ -25,4 +26,21 @@
 	"webpack": "^3.10.0",
 	"webpack-dev-server": "^2.9.7"
 }
+```
+
+#### 配置项目案例开发环境
+
+```
+1. 配置微型node服务器
+2. 实现热加载
+3. 更新 webpack.config.js 植入相关插件信息以及入口和出口的相关修改 
+4. 更改app目录下相关文件引用
+```
+```js
+//index.js
+import React from 'react';
+import { render } from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
+import Hello from './components/hello';
+...
 ```
