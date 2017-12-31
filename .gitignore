@@ -1,2 +1,2 @@
-# ����node_modules����������ļ�
+# 排除文件夹 包括文件夹下面的所有文件
 node_modules/

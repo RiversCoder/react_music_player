@@ -44,3 +44,74 @@ import { AppContainer } from 'react-hot-loader';
 import Hello from './components/hello';
 ...
 ```
+
+3. webpack.config.js 相关webpack配置：
+
+```
+var webpack = require('webpack');
+var path = require('path');
+var htmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+	entry : [
+		'webpack-dev-server/client?http://localhost:3000',
+		'webpack/hot/only-dev-server',
+		'react-hot-loader/patch',
+		path.join(__dirname,'app/index.js')
+	],
+	output : { 
+		path : path.join(__dirname,'/dist/'),
+		filename : '[name].js',
+		publicPath : '/'
+	},
+	plugins: [
+		new htmlWebpackPlugin({
+			template : './index.tpl.html',
+			inject : 'body',
+			filename : './index.html'
+		}),
+		new webpack.optimize.OccurrenceOrderPlugin(),
+		new webpack.HotModuleReplacementPlugin(),
+		new webpack.NoErrorsPlugin(),
+		new webpack.DefinePlugin({
+			'process.env.NODE_ENV':JSON.stringify('development')
+		})
+	],
+	module : {
+		loaders : [
+			{
+				test : /\.js$/,
+				exclude : /node_modules/,
+				loader : 'babel-loader',
+				query : {
+					presets:['react','es2015']
+				} 
+			},
+			{
+				test : /\.css$/,
+				loader : 'style!css'
+			},
+			{
+				test : /\.less/,
+				loader : 'style-loader!css-loader!less-loader'
+			}
+		]
+	}
+};
+```
+
+> 4. 创建 Header组件 Progress组件
+
+```js
+1. conponents目录下新建 header.js和header.less
+2. conponents目录下新建 progress.js和progress.less
+```
+
+> 5. React组件加载的生命周期
+
+```
+getDefaultProps getInitialState componentWillMount render componentDidMount componentWillUnmount
+
+```
+
+> 6. 
