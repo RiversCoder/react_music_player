@@ -114,4 +114,16 @@ getDefaultProps getInitialState componentWillMount render componentDidMount comp
 
 ```
 
-> 6. 
+> 6. 组件间的通信
+
+```
+1.父组件与子组件之间的通信
+2.子组件与父组件之间的通信
+3.创建播放器页面
+4.分离组件
+5.导入静态音乐数据
+6.default导出和不用default导出的区别
+7.音量按钮的数据交互设置
+8.播放暂停交互设置
+9.
+```
