@@ -125,5 +125,12 @@ getDefaultProps getInitialState componentWillMount render componentDidMount comp
 6.default导出和不用default导出的区别
 7.音量按钮的数据交互设置
 8.播放暂停交互设置
-9.
+9.音乐列表循环
+10.列表模块分离，将每一项列表分离成一个单独的组件，通过父组件传递参数( 每项ID,当前播放的音乐,音乐列表对象 )进行调用
+```
+
+> 7.
+
+```
+
 ```

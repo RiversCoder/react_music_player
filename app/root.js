@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/header';
 import Player from './page/player';
+import MusicList from './page/musiclist';
 import { MUSIC_LIST } from './config/musiclist';
 let musiclist = require('./config/musiclist');
 
@@ -10,7 +11,7 @@ console.log(musiclist.MUSIC_LIST[0]);
 class Root extends React.Component{
 	constructor(props){
 		super(props);
-		this.state = {currentMusicItem: musiclist.MUSIC_LIST[0]};
+		this.state = {currentMusicItem: musiclist.MUSIC_LIST[1] , musicList: MUSIC_LIST};
 	}
 	componentDidMount(){
 		let This = this;
@@ -29,7 +30,7 @@ class Root extends React.Component{
 		return (
 			<div>
 				<Header />
-				<Player currentMusicItem={this.state.currentMusicItem} repeatType='1'/>
+				<MusicList currentMusicItem={this.state.currentMusicItem} repeatType='1' musicList={this.state.musicList}/>
 			</div>
 		);
 	}
