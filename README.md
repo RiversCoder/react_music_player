@@ -1,5 +1,16 @@
 # Create music player by react
 
+### 源码使用方法：
+
+```
+git clone https://github.com/RiversCoder/react_music_player.git
+
+cd react_music_player && npm install
+
+npm start
+```
+
+
 > 1. 安装依赖
 
 ```JSON
@@ -129,8 +140,8 @@ getDefaultProps getInitialState componentWillMount render componentDidMount comp
 10.列表模块分离，将每一项列表分离成一个单独的组件，通过父组件传递参数( 每项ID,当前播放的音乐,音乐列表对象 )进行调用
 ```
 
-> 7.
+> 7. 路由控制切换页面
 
 ```
-
+import { Router,IndexRouter,Link,Route,HashHistory } from 'react-router'
 ```
