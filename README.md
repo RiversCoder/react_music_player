@@ -11,6 +11,10 @@ npm start
 ```
 
 
+
+![react_music_player](/scrrenshot/screen.png)
+
+
 > 1. 安装依赖
 
 ```JSON
@@ -145,3 +149,35 @@ getDefaultProps getInitialState componentWillMount render componentDidMount comp
 ```
 import { Router,IndexRouter,Link,Route,HashHistory } from 'react-router'
 ```
+
+```
+render(){
+	let This = this;
+	const MusicLists = () => (
+		<MusicList currentMusicItem={This.state.currentMusicItem} musicList={this.state.musicList} />
+	);
+	const Players = () => (
+		<Player currentMusicItem={This.state.currentMusicItem} repeatType='1' />
+	);
+	return (
+		<Router >
+			<section>
+				<Header />
+				<Switch>
+					<Route path="/" component={Players} />
+					<Route path="/list" component={MusicLists} />
+				</Switch>
+			</section>
+		</Router>
+	);
+}
+```
+
+> 8. 事件订阅 ( 更加方便子组件与父组件进行事件交互和响应 )
+
+```	
+1. cnpm install pubsub-js --save
+2. 在子组件中有条件地发布( 触发 )自定义事件 , 在父组件中处理该事件	
+```
+
+ 
