@@ -124,7 +124,7 @@ module.exports = {
 > 5. React组件加载的生命周期
 
 ```
-getDefaultProps getInitialState componentWillMount render componentDidMount componentWillUnmount
+getDefaultProps contrustor componentWillMount render componentDidMount componentWillUnmount
 
 ```
 
@@ -146,7 +146,8 @@ getDefaultProps getInitialState componentWillMount render componentDidMount comp
 > 7. 路由控制切换页面
 
 ```
-import { Router,IndexRouter,Link,Route,HashHistory } from 'react-router'
+import { BrowserRouter as Router,Link,Route,Switch} from 'react-router-dom';
+...
 ```
 
 ```
