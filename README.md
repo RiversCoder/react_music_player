@@ -1,3 +1,5 @@
+![react_music_player](/scrrenshot/screen.png)
+
 # Create music player by react
 
 ### 源码使用方法：
@@ -12,7 +14,7 @@ npm start
 
 
 
-![react_music_player](/scrrenshot/screen.png)
+
 
 
 > 1. 安装依赖
