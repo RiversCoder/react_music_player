@@ -1,4 +1,4 @@
-![react_music_player](/scrrenshot/screen.png)
+
 
 # Create music player by react
 
@@ -11,9 +11,6 @@ cd react_music_player && npm install
 
 npm start
 ```
-
-
-
 
 
 
@@ -182,4 +179,7 @@ render(){
 2. 在子组件中有条件地发布( 触发 )自定义事件 , 在父组件中处理该事件	
 ```
 
+> 9. 完成效果
+
+![react_music_player](/scrrenshot/screen.png)
  
