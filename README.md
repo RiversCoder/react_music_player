@@ -182,4 +182,8 @@ render(){
 > 9. 完成效果
 
 ![react_music_player](/scrrenshot/screen.png)
+
+> 10. 请关注我的个人博客
+
+请关注[小青蛙的博客](http://blog.sina,com.cn/riversfrog/ "小青蛙的博客") ,谢谢！
  
